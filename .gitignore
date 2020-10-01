@@ -33,7 +33,6 @@ sites/simpletest
 *.jar
 *.rar
 *.tar
-*.zip
 *.tgz
 
 # Logs and databases #

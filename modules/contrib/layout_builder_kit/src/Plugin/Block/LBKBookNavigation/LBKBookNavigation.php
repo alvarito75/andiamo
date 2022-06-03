@@ -173,7 +173,6 @@ class LBKBookNavigation extends LBKBaseComponent implements ContainerFactoryPlug
     if ($content) {
       $build['#theme'] = 'LBKBookNavigation';
       $build['#attached']['library'] = ['layout_builder_kit/book-navigation-styling'];
-      $build['#classes'] = $this->configuration['classes'];
       $build['#book_description'] = $this->getBookDescription();
       $build['#content'] = $content;
     }

@@ -1,3 +1,11 @@
+Layout Builder Kit 1.0.0-beta5, 2020-11-05
+------------------------------------------
+Changes since 1.0.0-beta4:
+- hook_event_dispatcher module updated to 2.2
+- default_content module version updated
+- old key core removed
+
+
 Layout Builder Kit 1.0.0-beta4, 2020-07-10
 ------------------------------------------
 Changes since 1.0.0-beta3:

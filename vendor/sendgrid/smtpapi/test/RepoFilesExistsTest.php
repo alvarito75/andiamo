@@ -4,21 +4,20 @@ use PHPUnit\Framework\TestCase;
 
 class RepoFilesExistsTest extends TestCase
 {
-    private $requiredFiles;
+    private $_requiredFiles;
 
-    protected function setUp()
+    protected function setUp(): void
     {
-        $this->requiredFiles = [
-            './.codeclimate.yml',
+        $this->_requiredFiles = [
             './.env_sample',
             './ISSUE_TEMPLATE.md',
             './PULL_REQUEST_TEMPLATE.md',
             './.gitignore',
-            './.travis.yml',
+            './.github/workflows/test-and-deploy.yml',
             './CHANGELOG.md',
             './CODE_OF_CONDUCT.md',
             './CONTRIBUTING.md',
-            ['./LICENSE.md', './LICENSE.txt'],
+            './LICENSE',
             './README.md',
             './TROUBLESHOOTING.md',
             './USAGE.md',
@@ -27,7 +26,7 @@ class RepoFilesExistsTest extends TestCase
 
     public function testFileArePresentInRepo()
     {
-        foreach ($this->requiredFiles as $filePath) {
+        foreach ($this->_requiredFiles as $filePath) {
             if (is_array($filePath)) {
                 $exists = array_filter(
                     $filePath,
@@ -43,4 +42,3 @@ class RepoFilesExistsTest extends TestCase
         }
     }
 }
-

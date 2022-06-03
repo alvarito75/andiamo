@@ -246,7 +246,6 @@ class LBKIconText extends LBKBaseComponent implements ContainerFactoryPluginInte
     $build['#text'] = $this->configuration['icon_text_component_fields']['text']['value'];
     $build['#text_format'] = $this->configuration['icon_text_component_fields']['text']['format'];
     $build['#link'] = $this->configuration['icon_text_component_fields']['link'];
-    $build['#classes'] = $this->configuration['classes'];
 
     return $build;
   }

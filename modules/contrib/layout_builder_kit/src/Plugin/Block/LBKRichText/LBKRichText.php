@@ -125,7 +125,6 @@ class LBKRichText extends LBKBaseComponent implements ContainerFactoryPluginInte
     $build['#attached']['library'] = ['layout_builder_kit/rich-text-styling'];
     $build['#rich_text'] = $this->configuration['rich_text_component_fields']['text_format']['value'];
     $build['#rich_text_format'] = $this->configuration['rich_text_component_fields']['text_format']['format'];
-    $build['#classes'] = $this->configuration['classes'];
 
     return $build;
   }

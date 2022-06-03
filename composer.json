@@ -15,19 +15,20 @@
         }
     ],
     "require": {
-        "balbuf/drupal-libraries-installer": "^1.0",
         "composer/installers": "^1.2",
-        "drupal/admin_toolbar": "^2.3",
+        "drupal/admin_toolbar": "^3.1",
         "drupal/console": "~1.0",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/core-vendor-hardening": "^8.8",
+        "drupal/devel": "^4.1",
         "drupal/flexslider": "^2.0",
         "drupal/image_effects": "^3.0",
         "drupal/layout_builder_kit": "^1.0@beta",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
+        "drupal/realistic_dummy_content": "^3.1",
         "drupal/sendgrid_integration": "^1.4",
         "drupal/share_everywhere": "^2.0",
         "drupal/superfish": "^1.4"
@@ -38,7 +39,14 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "drupal/core-vendor-hardening": true,
+            "drupal/console-extend-plugin": true
+        }
     },
     "extra": {
         "drupal-scaffold": {

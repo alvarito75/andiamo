@@ -259,7 +259,6 @@ class LBKRender extends LBKBaseComponent implements ContainerFactoryPluginInterf
     $build['#attached']['library'] = ['layout_builder_kit/render-styling'];
 
     $build['#render_type'] = $this->configuration['render_component']['render_type'];
-    $build['#classes'] = $this->configuration['classes'];
 
     $entity_type = $this->configuration['render_component']['render_type'];
     if ($entity_type === 'node') {

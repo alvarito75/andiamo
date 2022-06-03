@@ -251,6 +251,7 @@ abstract class LBKBaseComponent extends ContextAwarePluginBase implements BlockP
 
   public function build() {
     $build['#title'] = $this->configuration['title'];
+    $build['#classes'] = $this->configuration['classes'];
 
     // Checks if user is inside any layout page.
     $routeObject = $this->currentRouteMatch->getRouteObject();

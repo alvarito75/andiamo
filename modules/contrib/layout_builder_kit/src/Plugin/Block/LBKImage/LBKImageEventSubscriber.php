@@ -3,7 +3,7 @@
 namespace Drupal\layout_builder_kit\Plugin\Block\LBKImage;
 
 use Drupal\Core\Logger\LoggerChannelFactoryInterface;
-use Drupal\hook_event_dispatcher\Event\Theme\ThemeEvent;
+use Drupal\core_event_dispatcher\Event\Theme\ThemeEvent;
 use Drupal\hook_event_dispatcher\HookEventDispatcherInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 

@@ -529,7 +529,6 @@ class LBKTab extends LBKBaseComponent implements ContainerFactoryPluginInterface
     $build['#theme'] = 'LBKTab';
     $build['#attached']['library'] = ['layout_builder_kit/tab-styling'];
     $build['#tabs_default_text']['#markup'] = $this->configuration['tabs_default_text'];
-    $build['#classes'] = $this->configuration['classes'];
     $build['#tabs'] = $tabs;
     return $build;
   }

@@ -251,7 +251,7 @@ class LBKVideo extends LBKBaseComponent implements ContainerFactoryPluginInterfa
     // Render fields.
     // TODO: Add function for all kind of fields.
     //$field = $this->getField($this->configuration['video_component_fields']['video_field']);
-    $field = $this->getBundleField($this->configuration['video_component_fields']['video_field'], $entityType);
+    $field = !empty($this->configuration['video_component_fields']['video_field']) ? $this->getBundleField($this->configuration['video_component_fields']['video_field'], $entityType) : NULL;
     //$field = $this->configuration['video_component_fields']['video_field'];
 
     if (isset($field) && $field !== "" && $entityType !== "") {
@@ -413,7 +413,6 @@ class LBKVideo extends LBKBaseComponent implements ContainerFactoryPluginInterfa
 
     $build['#video_radio_options'] = $this->configuration['video_component_fields']['video_radio_options'];
     $build['#video_url'] = $this->getVideoEmbedUrl($this->configuration['video_component_fields']['video_url']);
-    $build['#classes'] = $this->configuration['classes'];
 
     return $build;
   }

@@ -7,7 +7,7 @@ package: 'Layout Builder Kit'
 dependencies:
   - drupal:default_content
   - layout_builder_kit:layout_builder_kit
-  - book:book
+  - drupal:book
 default_content:
   node:
     - 9ad91630-dcc1-4fe9-aaf8-bb7f20db0d14
@@ -19,9 +19,7 @@ default_content:
     - 31b367b9-0ca1-42a4-ab4d-2efc01456f1e
     - c37000f0-5af7-4a19-b997-455c56cff3ca
 
-# version: '8.x-1.0-beta3'
-
-# Information added by Drupal.org packaging script on 2020-07-10
-version: '8.x-1.0-beta4'
+# Information added by Drupal.org packaging script on 2021-11-05
+version: '8.x-1.0-beta5'
 project: 'layout_builder_kit'
-datestamp: 1594407330
+datestamp: 1636150913
